@@ -45,7 +45,7 @@ if (process.env.NODE_ENV === 'production') {
 
 app.use(morgan('dev'));
 app.use(cors({
-    origin: ['http://localhost:3060', 'tabtab.com'],
+    origin: ['http://localhost:3060', 'tabtab.com', 'http://13.209.98.205'],
     credentials: true,
 }));
 app.use('/', express.static(path.join(__dirname, 'uploads')));
